@@ -36,7 +36,7 @@ export const AttendanceHelper = ({ status, employeeId, statusChange }) => {
   const markEmployee = async (newStatus, employeeId) => {
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/attendance/update/${employeeId}`,
+        `https://ems-backend-iota.vercel.app/api/attendance/update/${employeeId}`,
         { status: newStatus },
         {
           headers: {

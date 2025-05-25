@@ -33,7 +33,7 @@ const handleSubmit = async (e) => {
     })
 
     try {
-          const response = await axios.post('http://localhost:8000/api/employee/add', formDataObj, {
+          const response = await axios.post('https://ems-backend-iota.vercel.app/api/employee/add', formDataObj, {
             headers: {
               "Authorization": `Bearer ${localStorage.getItem('token')}`
             }

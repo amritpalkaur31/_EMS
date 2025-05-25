@@ -17,7 +17,7 @@ const AttendanceReport = () => {
       if (dateFilter) {
         query.append("date", dateFilter)
       }
-      const response = await axios.get(`http://localhost:8000/api/attendance/report?${query.toString()}`, {
+      const response = await axios.get(`https://ems-backend-iota.vercel.app/api/attendance/report?${query.toString()}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

@@ -16,7 +16,7 @@ const Attendance = () => {
   const fetchAttendance = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:8000/api/attendance", {
+      const response = await axios.get("https://ems-backend-iota.vercel.app/api/attendance", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

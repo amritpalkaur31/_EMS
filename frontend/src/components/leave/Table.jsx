@@ -10,7 +10,7 @@ const Table = () => {
   // Fetch leave data from API
     const fetchLeaves = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/leave', {
+        const response = await axios.get('https://ems-backend-iota.vercel.app/api/leave', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

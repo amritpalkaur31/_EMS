@@ -13,7 +13,7 @@ const List = () => {
     const fetchEmployees = async () => {
       setEmpLoading(true);
       try {
-        const response = await axios.get("http://localhost:8000/api/employee", {
+        const response = await axios.get("https://ems-backend-iota.vercel.app/api/employee", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
@@ -29,7 +29,7 @@ const List = () => {
             dob: new Date(emp.dob).toLocaleDateString(),
             profileImage: (
               <img
-                src={`http://localhost:8000/${emp.userId?.profileImage}`}
+                src={`https://ems-backend-iota.vercel.app/${emp.userId?.profileImage}`}
                 alt="profile"
                 className="w-10 h-10 rounded-full object-cover"
               />

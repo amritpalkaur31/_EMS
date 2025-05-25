@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     setError(null);
     try {
-      const response = await axios.post("http://localhost:8000/api/auth/login", {
+      const response = await axios.post("https://ems-backend-iota.vercel.app/api/auth/login", {
         email,
         password,
       });
@@ -41,7 +41,7 @@ const Login = () => {
 
   const handleGoogleLoginSuccess = async (credentialResponse) => {
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/google-login", {
+      const res = await axios.post("https://ems-backend-iota.vercel.app/api/auth/google-login", {
         token: credentialResponse.credential,
       });
 
