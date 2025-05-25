@@ -49,16 +49,7 @@ const Header = () => {
           Login
         </NavLink>
 
-        <NavLink
-          to="/signup"
-          className={({ isActive }) =>
-            isActive
-              ? `${buttonClasses} bg-white text-teal-700 font-bold`
-              : buttonClasses
-          }
-        >
-          Sign Up
-        </NavLink>
+        
       </nav>
     </header>
   );
