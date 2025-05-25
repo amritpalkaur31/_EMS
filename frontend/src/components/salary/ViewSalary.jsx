@@ -12,7 +12,7 @@ const ViewSalary = () => {
   const fetchSalaries = async () => {
     try {
       const response = await axios.get(
-        `https://ems-backend-iota.vercel.app/api/salary/${id}/${user.role}`,
+        `https://ems-backend-w2zv.onrender.com/api/salary/${id}/${user.role}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

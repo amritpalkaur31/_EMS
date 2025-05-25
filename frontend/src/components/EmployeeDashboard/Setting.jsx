@@ -28,7 +28,7 @@ const Setting = () => {
         
           try {
             const response = await axios.put(
-              "https://ems-backend-iota.vercel.app/api/setting/change-password",
+              "https://ems-backend-w2zv.onrender.com/api/setting/change-password",
               setting,
               {
                 headers: {

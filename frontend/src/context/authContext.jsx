@@ -12,7 +12,7 @@ const AuthContextProvider = ({ children }) => {
       try {
         const token = localStorage.getItem("token");
         if (token) {
-          const response = await axios.get("https://ems-backend-iota.vercel.app/api/auth/verify", {
+          const response = await axios.get("https://ems-backend-w2zv.onrender.com/api/auth/verify", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

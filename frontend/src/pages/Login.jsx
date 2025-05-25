@@ -41,7 +41,7 @@ const Login = () => {
 
   const handleGoogleLoginSuccess = async (credentialResponse) => {
     try {
-      const res = await axios.post("https://ems-backend-iota.vercel.app/api/auth/google-login", {
+      const res = await axios.post("https://ems-backend-w2zv.onrender.com/api/auth/google-login", {
         token: credentialResponse.credential,
       });
 

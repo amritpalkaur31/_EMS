@@ -67,7 +67,7 @@ const Edit = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.put(`https://ems-backend-iota.vercel.app/api/employee/${id}`,
+      const response = await axios.put(`https://ems-backend-w2zv.onrender.com/api/employee/${id}`,
         employee,
         {
           headers: {
